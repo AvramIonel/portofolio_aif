@@ -1,11 +1,10 @@
-
-import './App.css';
+import "./App.css";
+import Intro from "./PortofolioContainer/Intro/Intro";
 
 function App() {
-
   return (
     <div className="App">
-      hello world
+      <Intro />
     </div>
   );
 }
