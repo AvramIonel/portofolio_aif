@@ -5,32 +5,35 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Typical from "react-typical";
 import "./intro.css";
 import { Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Intro = () => {
   return (
     <div className="i-container">
       <div className="i-parent">
         <div className="i-details">
-          <div className="i-icons">
-            <a
-              href="https://github.com/AvramIonel"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="1x" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ionel-florin-avram-94a2715b"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="1x" />
-            </a>
+          <div className="i-media">
+            <div className="i-media-icons">
+              <a
+                href="https://github.com/AvramIonel"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} size="1x" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ionel-florin-avram-94a2715b"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="1x" />
+              </a>
+            </div>
           </div>
           <div className="i-details-name">
             <span className="primary-text">
               {""}
-              Hello, I'm <span className="highligted-text">Ionel</span>
+              Hello, I'm <span className="highlighted-text">Ionel</span>
             </span>
           </div>
           <div className="i-detail-role">
@@ -50,17 +53,22 @@ const Intro = () => {
                   ]}
                 />
               </h1>
-              {/* <span className="i-role-tagline">
-
-              </span> */}
+              <span className="i-role-tagline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis architecto quaera
+              </span>
             </span>
           </div>
           <div className="i-options">
-            <Button>Contact Me</Button>
+            <Button variant="secondary" className="contact-btn">Contact Me</Button>
             <a href="AvramIonelFlorin.pdf" download="Avram Ionel.pdf">
-              <Button>Get Resume</Button>
+              <Button variant="danger" className="highlighted-btn">
+                Get Resume
+              </Button>
             </a>
           </div>
+        </div>
+        <div className="i-picture">
+          <div className="i-picture-background"></div>
         </div>
       </div>
     </div>
