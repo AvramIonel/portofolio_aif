@@ -32,15 +32,15 @@ const Intro = () => {
           </div>
           <div className="i-details-name">
             <span className="primary-text">
-              {""}
+              {/* {""} */}
               Hello, I'm <span className="highlighted-text">Ionel</span>
             </span>
           </div>
           <div className="i-detail-role">
             <span className="primary-text">
-              {""}
+              {/* {""} */}
               <h1>
-                {""}
+                {/* {""} */}
                 <Typical
                   loop={Infinity}
                   steps={[
@@ -54,12 +54,16 @@ const Intro = () => {
                 />
               </h1>
               <span className="i-role-tagline">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis architecto quaera
+                I belive that the future will bring all of us closer to
+                technology, I want to be part of it and work on
+                building it.
               </span>
             </span>
           </div>
           <div className="i-options">
-            <Button variant="secondary" className="contact-btn">Contact Me</Button>
+            <Button variant="secondary" className="contact-btn">
+              Contact Me
+            </Button>
             <a href="AvramIonelFlorin.pdf" download="Avram Ionel.pdf">
               <Button variant="danger" className="highlighted-btn">
                 Get Resume

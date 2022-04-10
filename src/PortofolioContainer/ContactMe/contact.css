@@ -1,0 +1,28 @@
+.c {
+  height: 100vh;
+  background-color: #003131;
+  position: relative;
+}
+.c-bg {
+  width: 25px;
+  height: 100%;
+  background-color: var(--sea-green-extra-dark);
+  position: absolute;
+}
+.c-wrapper {
+  padding: 150px;
+  display: flex;
+}
+.c-title {
+  padding: 100px;
+  font-size: 35px;
+  font-family: "Poppins ExtraBold";
+  color: var(--white);
+}
+.c-form {
+  padding: 60px 50px 100px 100px;
+  color: var(--dark);
+}
+.btn-app {
+  background-color: #02f8f8;
+}

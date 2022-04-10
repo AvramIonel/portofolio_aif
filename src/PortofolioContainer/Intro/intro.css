@@ -5,7 +5,8 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
-  background-image: url("../../assets/Home/dark-mode-background.jpg");
+  background-color: #006060;
+  /* background-image: url("../../assets/Home/dark-mode-background.jpg"); */
 }
 .i-parent {
   display: flex;
@@ -116,7 +117,7 @@
   .i-parent {
     flex-direction: column-reverse;
     margin: 40px 0 0 0;
-    justify-content:center;
+    justify-content: center;
   }
   .i-options {
     display: flex;
