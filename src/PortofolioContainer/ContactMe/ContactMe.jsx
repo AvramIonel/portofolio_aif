@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { validEmail } from "../../RegExp/Regex";
 import { FloatingLabel, Form, Button, Col } from "react-bootstrap";
 import "./contact.css";
 
@@ -23,6 +24,14 @@ const ContactMe = () => {
           console.log(error.text);
         }
       );
+  };
+  // Validator for eMail field in form
+  const [email, setEmail] = useState("");
+  const [emailErr, setEmailErr] = useState(false);
+  const validate = () => {
+    if (!validEmail.test(email)) {
+      setEmailErr(true);
+    }
   };
   return (
     <div className="c">
@@ -55,7 +64,13 @@ const ContactMe = () => {
                 label="Email"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="" name="email" />
+                <Form.Control
+                  type="email"
+                  placeholder=""
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </FloatingLabel>
             </Form.Group>
             <Form.Group as={Col}>
@@ -73,9 +88,15 @@ const ContactMe = () => {
               target="_blank"
               rel="noreferrer"
             > */}
-            <Button variant="outline-dark" type="submit" className="btn-app">
+            <Button
+              variant="outline-dark"
+              type="submit"
+              className="btn-app"
+              onClick={validate}
+            >
               Send Message
             </Button>
+            {emailErr && <p>Your email is invalid</p>}
             {/* </a> */}
             <Form.Group />
           </Form>
