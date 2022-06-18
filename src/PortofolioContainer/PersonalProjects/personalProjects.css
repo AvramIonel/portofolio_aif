@@ -19,3 +19,23 @@
   justify-content: space-between;
   width: 100%;
 }
+/* .pp-project .mySwiper {
+  background-color: #006060;
+} */
+@media screen and (max-width: 910px) {
+  .pp {
+    padding: 5px 5px;
+  }
+  .pp-title {
+    font-size: 40px;
+  }
+  .pp-project {
+    justify-content: space-evenly;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .pp-project {
+    flex-direction: column;
+  }
+}

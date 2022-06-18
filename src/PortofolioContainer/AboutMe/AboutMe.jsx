@@ -1,5 +1,5 @@
 import React from "react";
-import techReact from "../../assets/AboutMe/techR.png";
+import techReact from "../../assets/AboutMe/tech.png";
 import "./about.css";
 
 const AboutMe = () => {
