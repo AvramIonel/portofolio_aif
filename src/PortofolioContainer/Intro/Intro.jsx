@@ -55,16 +55,15 @@ const Intro = () => {
               </h1>
               <span className="i-role-tagline">
                 I belive that the future will bring all of us closer to
-                technology, I want to be part of it and work on
-                building it.
+                technology, I want to be part of it and work on building it.
               </span>
             </span>
           </div>
           <div className="i-options">
-            <Button variant="secondary" className="contact-btn">
+            {/* <Button variant="secondary" className="contact-btn">
               Contact Me
-            </Button>
-            <a href="AvramIonelFlorin.pdf" download="Avram Ionel.pdf">
+            </Button> */}
+            <a href="Avram_Ionel-Florin.pdf" download="Avram Ionel.pdf">
               <Button variant="danger" className="highlighted-btn">
                 Get Resume
               </Button>
