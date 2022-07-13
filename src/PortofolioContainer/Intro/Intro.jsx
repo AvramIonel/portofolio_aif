@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Typical from "react-typical";
 import "./intro.css";
-import { Button } from "react-bootstrap";
+import { Button, NavLink } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Intro = () => {
@@ -55,14 +55,18 @@ const Intro = () => {
               </h1>
               <span className="i-role-tagline">
                 I belive that the future will bring all of us closer to
-                technology, I want to be part of it and work on
-                building it.
+                technology, I want to be part of it and work on building it.
               </span>
             </span>
           </div>
           <div className="i-options">
-            <Button variant="secondary" className="contact-btn">
-              Contact Me
+            <Button
+              variant="secondary"
+              className="contact-btn"
+              // onClick={ContactMe}
+            >
+              {" "}
+              Contact Me{" "}
             </Button>
             <a href="AvramIonelFlorin.pdf" download="Avram Ionel.pdf">
               <Button variant="danger" className="highlighted-btn">
